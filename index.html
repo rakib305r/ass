@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline vs Block Example</title>
+    <style>
+      .assignment {
+        text-align: center;
+        background-color: rgb(20, 77, 16);
+        height: 150px;
+        color: white;
+        align-content: center;
+        border-radius: 8px;
+      }
+
+      .assignment img {
+        height: 80px;
+        width: 80px;
+      }
+
+      .container {
+        display: flex;
+        gap: 15px; 
+        padding-top: 20px;
+      }
+
+      .container img {
+        width: 250px;
+        height: 250px;
+        flex-shrink: 0;
+      }
+
+      .container p {
+        text-align: justify;
+        line-height: 1.6;
+      }
+
+      .inline-example {
+        border: 2px solid red;
+        padding: 5px;
+      }
+
+      .block-example {
+        border: 2px solid blue;
+        padding: 5px;
+        margin: 5px ;
+      }
+
+      .inline-to-block {
+        display: block;
+        border: 2px dashed green;
+        margin: 5px 0;
+      }
+
+      .block-to-inline {
+        display: inline-block;
+        border: 2px dashed purple;
+        margin-right: 10px;
+      }
+
+      .middle {
+        background-color: rgb(169, 182, 193);
+        border-radius: 8px;
+        margin-top: 8px;
+        padding: 30px;
+      }
+
+      .last {
+        margin-top: 4px;
+        padding: 30px;
+        background-color: rgb(169, 182, 193);
+        text-align: center;
+        border-radius: 8px;
+      }
+
+      .last input {
+        margin-bottom: 10px;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="assignment">
+      <h1 style="margin: 5px">ASSIGNMENT-2</h1>
+      <img src="cropped_circle_image (2).png" alt="logo" />
+    </div>
+
+    <div class="container">
+      <img src="1_qXez19fmYJXd6wBHIUDtlQ.png" alt="cartoon" class="img" />
+      <p class="text">
+        An inline element is like a word in a sentence; it exists within the
+        flow of text, taking up only the space it needs, never forcing a break
+        or creating a gap around it. It moves gracefully alongside other
+        elements, blending into the line, allowing content to sit side by side
+        naturally, much like letters in a word or links in a paragraph. A block
+        element, in contrast, is more like a paragraph or a building block; it
+        demands its own space, starting on a new line and stretching across the
+        entire width of its container, establishing clear boundaries and
+        structure, separating itself distinctly from other elements around it.
+        Between these two extremes lies the inline-block element, which strikes
+        a balance: it can exist inline with other elements, not breaking the
+        flow, yet it behaves like a block in that its width and height can be
+        explicitly defined, giving it form and presence within the line. This
+        combination allows designers to create elements that are flexible,
+        aligned neatly alongside others, yet maintain control over their size,
+        spacing, and layout, bridging the gap between the free-flowing nature of
+        inline content and the structured rigidity of block elements.
+      </p>
+    </div>
+
+    <div class="middle">
+      <h2>&#10003; Inline Elements Example</h2>
+      <p>
+        This is <span class="inline-example">inline span 1</span> and
+        <span class="inline-example">inline span 2</span>.
+      </p>
+
+      <h2>&#10003; Block Elements Example</h2>
+      <div class="block-example">Block DIV 1</div>
+      <div class="block-example">Block DIV 2</div>
+
+      <h2>&#10003; Inline → Block Example</h2>
+      <p>
+        <span class="inline-to-block">Converted span 1</span>
+        <span class="inline-to-block">Converted span 2</span>
+      </p>
+
+      <h2>&#10003; Block → Inline Example</h2>
+      <div class="block-to-inline">Converted div 1</div>
+      <div class="block-to-inline">Converted div 2</div>
+    </div>
+
+    <div class="last">
+      <h2>TODAY CLASS PRACTISE</h2>
+      <div>
+        <label for="text">NAME:</label>
+        <input type="text" id="text" placeholder="Enter your name" /><br />
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" placeholder="Enter your email" /><br />
+        <label for="password">PASSWORD:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        /><br />
+      </div>
+    </div>
+  </body>
+</html>
